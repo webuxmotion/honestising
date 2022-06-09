@@ -50,7 +50,7 @@ code {
   padding: 10px;
   border-radius: 10px;
   background-color: rgba(234, 246, 253, 0.97);
-  border: 1px solid #520096;
+  border: 1px solid #90d7af;
 }
 .w-languages__dropdown::before {
   content: "";
@@ -72,7 +72,7 @@ code {
 .w-task-one-item {
   padding-top: 40px;
   padding-bottom: 60px;
-  color: #520096;
+  color: #90d7af;
 }
 .w-task-one-item label {
   cursor: pointer;
@@ -100,7 +100,7 @@ code {
 }
 .w-task-one-item__answer {
   cursor: pointer;
-  background-color: #f2e3ff;
+  background-color: white;
   position: relative;
   border: 3px solid transparent;
   border-radius: 12px;
@@ -111,7 +111,7 @@ code {
   width: 250px;
 }
 .w-task-one-item__answer:hover {
-  background-color: #e7c9ff;
+  background-color: white;
 }
 .w-task-one-item__answer.is-wrong {
   border: 3px solid red;
@@ -138,7 +138,7 @@ code {
 .w-task-one-item__button {
   padding: 20px 40px;
   cursor: pointer;
-  background-color: #520096;
+  background-color: #90d7af;
   border-radius: 10px;
   color: white;
   border: none;
@@ -328,20 +328,20 @@ code {
 }
 .p-one-item__top-control {
   padding: 10px;
-  background-color: rgb(234, 246, 253);
+  background-color: #ececec;
   text-decoration: none;
   border-radius: 20px;
   display: inline-block;
 }
 .p-one-item__top-control.is-active {
-  background-color: #520096;
+  background-color: #90d7af;
   color: white;
 }
 .p-one-item__top-control.is-active svg {
   opacity: 1;
 }
 .p-one-item__top-control:hover:not(.is-active) {
-  background-color: #d3ecfb;
+  background-color: #dfdfdf;
 }
 .p-one-item__top-control svg {
   width: 20px;
@@ -380,7 +380,7 @@ code {
 }
 
 .p-list__title {
-  color: #520096;
+  color: #90d7af;
 }
 .p-list__items {
   display: flex;
@@ -393,7 +393,7 @@ code {
 .p-list__filter-button {
   padding: 10px;
   text-decoration: none;
-  background-color: rgb(234, 246, 253);
+  background-color: #ececec;
   border-radius: 20px;
   margin-left: 10px;
 }
@@ -402,7 +402,7 @@ code {
   color: white;
 }
 .p-list__filter-button:hover:not(.is-active) {
-  background-color: #d3ecfb;
+  background-color: #dfdfdf;
 }
 .p-list__header {
   display: flex;
@@ -438,7 +438,7 @@ code {
   padding-left: 40px;
   padding-right: 150px;
   padding-bottom: 100px;
-  color: #520096;
+  color: #90d7af;
 }
 .p-profile__save-button-wrapper {
   padding-top: 40px;
@@ -472,7 +472,7 @@ code {
 
 .button {
   transition: 0.3s;
-  background-color: #520096;
+  background-color: #90d7af;
   text-decoration: none;
   color: white;
   padding: 14px 60px;
@@ -489,10 +489,10 @@ code {
   transform: translateY(-1px);
 }
 .button:hover {
-  background-color: #6e00c9;
+  background-color: #b5e5ca;
 }
 .button:active {
-  background-color: #520096;
+  background-color: #90d7af;
 }
 
 .hero {
@@ -503,7 +503,7 @@ code {
 }
 .hero__column {
   width: 34%;
-  background-color: rgb(236, 236, 236);
+  background-color: #ececec;
   min-height: 200vh;
   position: relative;
 }
@@ -534,8 +534,8 @@ code {
   right: 0;
   bottom: 0;
   left: 0;
-  backdrop-filter: blur(50px);
-  background-color: rgba(0, 0, 0, 0.01);
+  backdrop-filter: blur(30px);
+  background-color: rgba(236, 236, 236, 0.9);
   padding-right: 20px;
   padding-left: 20px;
   font-size: 2vw;
@@ -696,7 +696,7 @@ body.is-honest-fullscreen .center {
 .input {
   display: flex;
   flex-direction: column;
-  color: #520096;
+  color: #90d7af;
 }
 .input__label {
   font-size: 24px;
@@ -706,17 +706,17 @@ body.is-honest-fullscreen .center {
 }
 .input__input {
   background-color: transparent;
-  border: 1px solid #520096;
+  border: 1px solid #90d7af;
   border-radius: 10px;
   height: 54px;
   padding-left: 20px;
   padding-right: 20px;
-  color: #520096;
+  color: #90d7af;
   font-size: 26px;
   box-sizing: border-box;
 }
 .input__input:focus {
-  border: 1px solid #cf96ff;
+  border: 1px solid white;
   outline: none;
 }
 .input__input:disabled {
@@ -728,7 +728,7 @@ body.is-honest-fullscreen .center {
   padding-top: 150px;
   padding-bottom: 100px;
   padding-right: 100px;
-  color: #520096;
+  color: #90d7af;
 }
 .login__title {
   margin-bottom: 40px;
@@ -757,7 +757,7 @@ body.is-honest-fullscreen .center {
   padding: 20px;
   box-sizing: border-box;
   text-decoration: none;
-  color: #520096;
+  color: #90d7af;
   font-size: 20px;
 }
 .lesson-card:hover {
@@ -806,7 +806,7 @@ body.is-honest-fullscreen .center {
 }
 
 .google-button {
-  background-color: #520096;
+  background-color: #90d7af;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25), inset -1px 4px 17px -2px rgba(250, 253, 255, 0.8);
   display: inline-flex;
   align-items: center;
@@ -834,7 +834,7 @@ body.is-honest-fullscreen .center {
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  background-color: #520096;
+  background-color: #90d7af;
   position: fixed;
   bottom: 40px;
   right: 20px;

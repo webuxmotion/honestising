@@ -9,7 +9,7 @@
   &__arrow {
     height: 20%;
     width: 100%;
-    background-color: #ececec;
+    background-color: $secondary-color;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +27,7 @@
       height: auto;
 
       path {
-        fill: #ececec;
+        fill: $secondary-color;
       }
     }
   }

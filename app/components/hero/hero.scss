@@ -6,7 +6,7 @@
 
   &__column {
     width: 34%;
-    background-color: rgb(236, 236, 236);
+    background-color: $secondary-color;
     min-height: 200vh;
     position: relative;
   }
@@ -14,7 +14,7 @@
   &__column-title {
     text-align: center;
     font-size: 2vw;
-    background-color: #ececec;
+    background-color: $secondary-color;
     padding-top: 8%;
     padding-bottom: 8%;
     position: sticky;
@@ -42,8 +42,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    backdrop-filter: blur(50px);
-    background-color: rgba(0, 0, 0, 0.01);
+    backdrop-filter: blur(30px);
+    background-color: transparentize($color: $secondary-color, $amount: 0.1);
     padding-right: 20px;
     padding-left: 20px;
     font-size: 2vw;
