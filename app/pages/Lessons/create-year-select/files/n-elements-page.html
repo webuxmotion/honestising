@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select name="select" id="year-select">
+      <option value="2000">2000</option>
+      <option value="2001">2001</option>
+      <option value="2002">2002</option>
+      <option value="2003" selected>2003</option>
+      <option value="2004">2004</option>
+      <option value="2005">2005</option>
+      <option value="2006">2006</option>
+      <option value="2007">2007</option>
+    </select>
+
+    <script>
+      const yearSelectElement = document.getElementById('year-select');
+
+      const optionElement = document.createElement('option');
+      optionElement.setAttribute('value', 2008);
+      optionElement.innerHTML = 2008;
+
+      const optionElement2 = document.createElement('option');
+      optionElement2.setAttribute('value', 2009);
+      optionElement2.innerHTML = 2009;
+
+      yearSelectElement.insertAdjacentElement('beforeEnd', optionElement);
+      yearSelectElement.insertAdjacentElement('beforeEnd', optionElement2);
+
+      for (let year = 2010; year <= 2100; year++) {
+        const optionElement = document.createElement('option');
+        optionElement.setAttribute('value', year);
+        optionElement.innerHTML = year;
+
+        yearSelectElement.insertAdjacentElement('beforeEnd', optionElement);
+      }
+    </script>
+  </body>
+</html>

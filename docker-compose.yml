@@ -1,0 +1,46 @@
+version: "3.2"
+services:
+  php:
+    build:
+      context: .
+    image: author/honestising:1.0.0
+    networks:
+      - frontend
+      - backend
+    environment:
+      - MYSQL_HOST=honestising-mysql-app
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+      - MYSQL_DB=starter_kit_db
+    volumes:
+      - ./:/var/www/html/
+    ports:
+      - "50001:80"
+    container_name: honestising-app
+  mysql:
+    image: mysql:5.7
+    networks:
+      - backend
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpassword
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+      - MYSQL_DATABASE=starter_kit_db
+    container_name: honestising-mysql-app
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:4.7
+    depends_on:
+      - mysql
+    networks:
+      - backend
+    ports:
+      - "50002:80"
+    environment:
+      - PMA_HOST=honestising-mysql-app
+      - PMA_PORT=3306
+    volumes:
+      - /sessions
+    container_name: honestising-phpmyadmin-app
+networks:
+  frontend:
+  backend:

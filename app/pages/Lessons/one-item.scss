@@ -1,0 +1,68 @@
+.p-one-item {
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 100px;
+  font-size: 20px;
+
+  &__top-control {
+    padding: 10px;
+    background-color: $secondary-color;
+    text-decoration: none;
+    border-radius: 20px;
+    display: inline-block;
+
+    &.is-active {
+      background-color: $primary-color;
+      color: white;
+
+      svg {
+        opacity: 1;
+      }
+    }
+
+    &:hover:not(.is-active) {
+      background-color: darken($secondary-color, 5%);
+    }
+
+    svg {
+      width: 20px;
+      height: auto;
+      opacity: 0.4;
+    }
+  }
+
+  p {
+    max-width: 700px;
+    margin-bottom: 10px;
+  }
+
+  li {
+    margin-bottom: 20px;
+  }
+
+  img {
+    max-width: 100%;
+    width: 500px;
+    transition: 0.3s;
+    cursor: zoom-in;
+    margin-bottom: 20px;
+    display: inline-block;
+
+    &.is-fullwidth {
+      width: 100%;
+      cursor: zoom-out;
+    }
+  }
+
+  @include media('mobile') {
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 100px;
+
+    ol {
+      padding-left: 30px;
+    }
+  }
+}

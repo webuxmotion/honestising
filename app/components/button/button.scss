@@ -1,0 +1,25 @@
+.button {
+  @include hoverEffect;
+  
+  background-color: $primary-color;
+  text-decoration: none;
+  color: white;
+  padding: 14px 60px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  border: none;
+  display: inline-block;
+
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25), inset -1px 4px 17px -2px rgba(250, 253, 255, 0.8);
+  border-radius: 10px;
+
+  &:hover {
+    background-color: lighten($primary-color, 10%);
+  }
+
+  &:active {
+    background-color: $primary-color;
+  }
+}

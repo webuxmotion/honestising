@@ -1,0 +1,1 @@
+<p>Download and install this code editor <a href="<?=$code_editor_link?>" target="_blank">Visual Studio Code</a></p>

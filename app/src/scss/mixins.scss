@@ -1,0 +1,27 @@
+@mixin hoverEffect {
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
+
+@mixin media($bp) {
+  @if $bp == "tablet" {
+      @media screen and (max-width: 1200px) {
+          @content;
+      }
+  }
+
+  @else if $bp == "mobile" {
+      @media screen and (max-width: 900px) {
+          @content;
+      }
+  }
+
+  @else {
+    @media screen and (max-width: $bp) {
+      @content;
+    } 
+  }
+}

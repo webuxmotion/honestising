@@ -1,0 +1,40 @@
+.lesson-card {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 20px;
+  background-color: #E9E9E9;
+  display: inline-flex;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: $primary-color;
+  font-size: 20px;
+
+  &:hover {
+    background-color: rgba(0, 0,0, 0.05);
+  }
+
+  &__icon {
+    position: absolute;
+    top: 20px;
+
+    &--pin {
+      left: 20px;
+    }
+
+    &--done {
+      right: 20px;
+    }
+
+    svg {
+      width: 40px;
+      height: auto;
+    }
+  }
+
+  @include media('mobile') {
+    width: 100%;
+  }
+}

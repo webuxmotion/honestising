@@ -1,0 +1,137 @@
+.w-task-one-item {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  color: $primary-color;
+
+  label {
+    cursor: pointer;
+  }
+
+  &.is-need-choose {
+    .w-task-one-item {
+      &__answers-title {
+        animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+      }
+    }
+  }
+
+  &__success-animation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    display: none;
+  }
+
+  &__question-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    max-width: 800px;
+  }
+
+  &__answer {
+    cursor: pointer;
+    background-color: lighten($primary-color, 65%);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 12px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 250px;
+
+    &:hover {
+      background-color: lighten($primary-color, 60%);
+    }
+    
+    &.is-wrong {
+      border: 3px solid red;
+      background-color: rgba(255, 0, 0, 0.2);
+    }
+
+    &.is-success {
+      border: 3px solid green;
+      background-color: rgba(0, 255, 0, 0.2);
+
+      .w-task-one-item {
+        &__success-animation {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__answers-title {
+    font-size: 26px;
+    margin-top: 10px;
+  }
+
+  &__answer-image {
+    width: 100%;
+  }
+
+  &__answers-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__button {
+    padding: 20px 40px;
+    cursor: pointer;
+    background-color: $primary-color;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    @include hoverEffect;
+    
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__question-image {
+    max-width: 700px !important;
+  }
+
+  img {
+    &.w-task-one-item__question-image {
+      border-radius: 10px;
+      width: 340px;
+    }
+
+    &.w-task-one-item__answer-image {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+}

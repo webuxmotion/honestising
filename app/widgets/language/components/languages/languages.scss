@@ -1,0 +1,41 @@
+.w-languages {
+  position: relative;
+
+  &:hover {
+    .w-languages__dropdown {
+      display: flex;
+    }
+  }
+
+  &__dropdown {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+    margin-left: 10px;
+    display: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(234, 246, 253, 0.97);
+    border: 1px solid $primary-color;
+
+    &::before {
+      content: '';
+      width: 12px;
+      height: 100%;
+      position: absolute;
+      left: -11px;
+      top: 0;
+    }
+  }
+
+  &__button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

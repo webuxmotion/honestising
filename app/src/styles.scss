@@ -1,0 +1,25 @@
+@import "./scss/variables.scss";
+@import "./scss/reset.scss";
+@import "./scss/mixins.scss";
+
+@import "../widgets/language/components/languages/languages.scss";
+@import "../widgets/task/components/one-item/one-item.scss";
+@import "../widgets/task/components/success-animation/success-animation.scss";
+
+@import "../pages/Lessons/one-item.scss";
+@import "../pages/Lessons/list.scss";
+@import "../pages/User/profile.scss";
+
+@import "../components/logo/logo.scss";
+@import "../components/button/button.scss";
+@import "../components/hero/hero.scss";
+@import "../components/sidebar/sidebar.scss";
+@import "../components/content/content.scss";
+@import "../components/header/header.scss";
+@import "../components/center/center.scss";
+@import "../components/input/input.scss";
+@import "../components/login/login.scss";
+@import "../components/lesson-card/lesson-card.scss";
+@import "../components/message/message.scss";
+@import "../components/google-button/google-button.scss";
+@import "../components/go-top-button/go-top-button.scss";

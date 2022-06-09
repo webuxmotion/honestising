@@ -1,0 +1,29 @@
+.go-top-button {
+    $size: 50px;
+
+    width: $size;
+    height: $size;
+    border-radius: $size;
+    background-color: $primary-color;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include hoverEffect;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    svg {
+        transform: rotate(-90deg);
+        path {
+            fill: white;
+        }
+    }
+}

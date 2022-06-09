@@ -1,0 +1,40 @@
+.center {
+  width: 32%;
+  position: fixed;
+  left: 34%;
+  top: 14vw;
+  bottom: 0;
+  z-index: 2;
+
+  &__arrow {
+    height: 20%;
+    width: 100%;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 32%;
+    position: relative;
+  }
+
+  &__icon {
+    width: 90%;
+    position: absolute;
+    top: 100%;
+
+    svg {
+      width: 100%;
+      height: auto;
+
+      path {
+        fill: #ececec;
+      }
+    }
+  }
+}
+
+body.is-honest-fullscreen {
+  .center {
+    display: none;
+  }
+}
