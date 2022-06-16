@@ -6,6 +6,9 @@ Router::add('^lessons/(?P<action>[a-z-]+)/(?P<id>[0-9]+)$', ['controller' => 'Le
 
 Router::add('^(?P<lang>[a-z]{2}+)?/?lessons/(?P<alias>[a-z-]+)?$', ['controller' => 'Lessons', 'action' => 'one-item']);
 
+
+Router::add('^(?P<lang>[a-z]{2}+)?/?actualisation/?$', ['controller' => 'Redirect', 'action' => 'actualisation']);
+
 Router::add('^(?P<lang>[a-z]{2}+)?/?about/?$', ['controller' => 'Pages', 'action' => 'about']);
 Router::add('^(?P<lang>[a-z]{2}+)?/?contacts/?$', ['controller' => 'Pages', 'action' => 'contacts']);
 Router::add('^(?P<lang>[a-z]{2}+)?/?sponsors/?$', ['controller' => 'Pages', 'action' => 'sponsors']);
